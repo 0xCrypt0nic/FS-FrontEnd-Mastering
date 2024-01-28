@@ -16,7 +16,9 @@
         <ul>
             <li>Accueil</li>
             <li>Boutique</li>
-            <li>Formulaire</li>
+            <li>
+                <a href="#form">Formulaires</a>
+            </li>
         </ul>
     </nav>
 
@@ -82,10 +84,48 @@
                 <video src="./video.mp4" autoplay muted loop height="200"></video>
             </div>
         </section>
+        <section id="form">
+            <h2>Les formulaires</h2>
+            <form action="">
+                <!-- "for" et "id" permettent de lier le label et l'input  -->
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Entrez votre nom" />
+                <br>
+                <label for="age">Entrez votre âge</label>
+                <input type="number" id="age" value="18">
+                <br>
+                <!-- Input de type select  -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="Homme">Homme</option>
+                    <option value="Femme" selected>Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+                <!-- Input de type radio  -->
+                <div>
+                    <input type="radio" name="type" id="human" checked>
+                    <label for="human">Humain</label>
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">Chien</label>
+                    <input type="radio" name="type" id="cat">
+                    <label for="cat">Chat</label>
+                </div>
+                <textarea cols="20" rows="20" placeholder="Votre message..."></textarea>
+                <br>
+                <!-- Input de type checkbox  -->
+                <input type="checkbox" id="cgv">
+                <label for="cgv">Accepter les conditions générales</label>
+                <br>
+                <!-- Input de type submit permet de valider  -->
+                <input type="submit" value="Ceci est le bouton pour valider le formulaire">
+            </form>
+            <button>Ceci est un bouton</button>
+        </section>
     </main>
 
     <footer>
-
+        <a href="mailto:n.greneche45@gmail.com">Contactez moi</a>
+        <a href="notice.txt" download="Notice">Téléchargez la notice</a>
     </footer>
 </body>
 
