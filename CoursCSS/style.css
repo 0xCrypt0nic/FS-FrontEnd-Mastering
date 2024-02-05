@@ -7,6 +7,10 @@
 
 body {
   font-family: "DMSerif", Verdana;
+  background: url(./assets/img/bg.jpg) center/cover;
+
+  /* VH = 100% de la taille de l'écran */
+  min-height: 100vh;
 }
 
 h1 {
