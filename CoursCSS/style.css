@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Oswald:wght@500&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+@font-face {
+  font-family: "DMSerif";
+  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+body {
+  font-family: "DMSerif", Verdana;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+
+  /* Les tailles de polices doivent être en REM */
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 8px #00000042;
+  color: #ab0ef4;
+  font-family: "Oswald", sans-serif;
+}
