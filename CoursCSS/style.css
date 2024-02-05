@@ -41,7 +41,8 @@ h2 {
 }
 
 .flexbox,
-.grid {
+.grid,
+.absolute {
   border: 2px solid skyblue;
   border-radius: 10px;
   padding: 10px;
@@ -72,7 +73,7 @@ h2 {
 
 /* GRID  */
 .grid img {
-  margin-top: 20px;
+  margin-top: 20px auto;
   width: 80%;
 }
 
@@ -117,4 +118,33 @@ textarea {
 #btn-submit:hover {
   background: darkblue;
   color: white;
+}
+
+/* ABSOLUTE  */
+/* Il faut mettre une position relative au parent pour contraindre l'élément en absolute dans ses frontières  */
+
+.absolute {
+  position: relative;
+  height: 200px;
+}
+
+#circle1 {
+  height: 80px;
+  width: 80px;
+  background: skyblue;
+  position: absolute;
+  border-radius: 150px;
+  top: 0;
+  right: 0;
+}
+
+#circle2 {
+  height: 40px;
+  width: 40px;
+  border-radius: 150px;
+  background-color: teal;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
 }
