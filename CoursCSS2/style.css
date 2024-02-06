@@ -118,8 +118,77 @@ label {
   padding: 10px;
   border-radius: 5px;
   transition: 0.2s;
+  user-select: none;
 }
 
 label:hover {
   transform: scale(1.1);
+}
+
+.e-mail {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.e-mail input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--grey);
+  width: 45%;
+  max-width: 350px;
+  min-width: 180px;
+  background: transparent;
+}
+
+input[type="text"]:focus {
+  background: var(--triangle);
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: var(--grey);
+  background: transparent;
+  border: 1px solid var(--triangle);
+  transition: 0.1s;
+  font-family: "PressStart";
+  font-size: 1rem;
+}
+
+button:hover {
+  letter-spacing: 3px;
+}
+
+button:active {
+  transform: scale(1.2);
+}
+
+button:hover + a,
+a:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a {
+  display: block;
+  color: var(--triangle);
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.7rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.3s;
+}
+
+a:visited {
+  color: var(--triangle);
 }
