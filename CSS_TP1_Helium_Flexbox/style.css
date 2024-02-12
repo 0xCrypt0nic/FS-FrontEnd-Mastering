@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./src/font/Inter-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: rgb(27, 27, 27);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+li {
+  font-size: 0.9rem;
+}
