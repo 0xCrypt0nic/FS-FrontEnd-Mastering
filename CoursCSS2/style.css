@@ -143,6 +143,16 @@ label {
 
 label:hover {
   transform: scale(1.1);
+  animation: label1 1s infinite linear;
+}
+
+@keyframes label1 {
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .e-mail {
