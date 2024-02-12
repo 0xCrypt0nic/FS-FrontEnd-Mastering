@@ -23,8 +23,8 @@ nav {
 }
 
 h2 {
-  width: 50%;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 ul {
@@ -37,4 +37,24 @@ ul {
 
 li {
   font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.header-left {
+  border: 1px solid blue;
+}
+
+.header-right {
+  border: 1px solid yellow;
+}
+
+#modem {
+  width: 650px;
 }
