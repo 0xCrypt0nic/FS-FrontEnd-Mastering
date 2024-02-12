@@ -46,6 +46,26 @@ body {
 
 h1 {
   margin-bottom: 24px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  background: var(--triangle);
+  height: 1px;
+  width: 100%;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  animation: h1anim 3s ease-in-out forwards;
+  transform-origin: left;
+}
+
+@keyframes h1anim {
+  100% {
+    transform: translateX(-50%) scaleX(1);
+  }
 }
 
 .grid-container {
