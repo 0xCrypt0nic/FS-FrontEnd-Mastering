@@ -44,17 +44,49 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  height: 80%;
 }
 
 .header-left {
-  border: 1px solid blue;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-left-container {
+  color: white;
+  padding: 0 20px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4.7rem;
+  margin: 10px 0;
+}
+
+.header-left-container h3 {
+  color: blue;
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 0.8rem;
 }
 
 .header-right {
-  border: 1px solid yellow;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
 
 #modem {
-  width: 650px;
+  width: 85%;
 }
