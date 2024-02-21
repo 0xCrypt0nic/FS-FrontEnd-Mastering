@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "Y Y M"
+    "R G M"
+    "R P P";
+  gap: 25px;
+}
+
+div:nth-child(1) {
+  grid-area: Y;
+  background: yellow;
+}
+div:nth-child(2) {
+  grid-area: M;
+  background: purple;
+}
+div:nth-child(3) {
+  grid-area: G;
+  background: green;
+}
+div:nth-child(4) {
+  grid-area: R;
+  background: red;
+}
+div:nth-child(5) {
+  grid-area: P;
+  background: orchid;
+}
