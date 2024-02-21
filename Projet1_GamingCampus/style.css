@@ -82,4 +82,9 @@ h1 {
   color: white;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.main-header button:hover {
+  transform: scale(1.1);
 }
