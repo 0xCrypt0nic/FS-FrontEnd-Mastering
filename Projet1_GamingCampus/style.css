@@ -71,7 +71,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-.main-header button {
+button {
   background-color: transparent;
   border: 1px solid white;
   padding: 10px 20px;
@@ -83,8 +83,58 @@ h1 {
   transition: 0.2s;
 }
 
-.main-header button:hover {
+button:hover {
   border: 1px solid black;
   background: white;
   color: black;
+}
+
+.header-text {
+  margin: 35px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  width: 70%;
+}
+
+/* /////////////////// ICON PART /////////////////// */
+
+.icon-part {
+  background: black;
+}
+
+.icon-part-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.list-icon-part {
+  display: grid;
+  grid-template-rows: 45% 10% 20% 25%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.lip-logo {
+  text-align: center;
+}
+
+.list-icon-part h3 {
+  text-transform: uppercase;
+  font-family: "MM", sans-serif;
+  text-align: center;
+  margin: 70px 0;
+}
+
+.list-icon-part p {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.list-icon-part button {
+  width: 200px;
+  margin: 0 auto;
 }
