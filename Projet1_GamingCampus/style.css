@@ -217,3 +217,25 @@ button:hover {
   font-size: 0.8rem;
   color: rgb(103, 13, 103);
 }
+
+/* /////////////////// FOOTER /////////////////// */
+
+footer {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "MM", sans-serif;
+  padding: 30px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
