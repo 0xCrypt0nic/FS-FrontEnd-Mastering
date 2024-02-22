@@ -138,3 +138,82 @@ button:hover {
   width: 200px;
   margin: 0 auto;
 }
+
+/* /////////////////// NEWS PART /////////////////// */
+
+.news-part {
+  background: rgb(234, 234, 234);
+}
+
+.header-news {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 70%;
+}
+
+.left-part h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "MM", sans-serif;
+}
+
+.left-part p {
+  font-family: "MM", sans-serif;
+  padding: 10px 0;
+}
+
+.right-part {
+  text-align: center;
+}
+
+.right-part button {
+  border: 1px solid black;
+  color: black;
+  font-family: "MM", sans-serif;
+}
+
+.main-news {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-news-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.news-card {
+  height: 700px;
+  display: grid;
+  grid-template-rows: 40% 10% 40% 10%;
+}
+
+.news-card {
+  padding: 30px 0 100px;
+}
+
+.mn-pic img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px rgb(102, 101, 101);
+}
+
+.news-card h4,
+.news-card p {
+  font-family: "MM", sans-serif;
+  width: 80%;
+}
+
+.news-card h4 {
+  font-size: 1.1rem;
+}
+
+.news-card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "MM", sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: rgb(103, 13, 103);
+}
