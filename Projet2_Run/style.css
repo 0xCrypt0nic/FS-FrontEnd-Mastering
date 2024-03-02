@@ -16,10 +16,6 @@ li {
   list-style-type: none;
 }
 
-img {
-  width: 100px;
-}
-
 p {
   font-size: 1.1rem;
   line-height: 30px;
@@ -73,4 +69,26 @@ header {
 h1 {
   font-size: 3.5rem;
   letter-spacing: 2px;
+}
+
+/* ///////////////////// INFOS1 ///////////////////// */
+
+.infos1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+/* ///////////////////// INFOS2 ///////////////////// */
+
+.infos2 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.img-container {
+  border: 1px solid red;
+}
+
+img {
+  width: 100%;
 }
