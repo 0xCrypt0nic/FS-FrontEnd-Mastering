@@ -185,3 +185,37 @@ legend {
   grid-area: btn;
   margin: 10px auto;
 }
+
+.form-contact::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: lightgray;
+  transform: translateX(5%);
+}
+
+/* ///////////////////// FOOTER ///////////////////// */
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+li {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:hover {
+  border: 1px solid black;
+}
