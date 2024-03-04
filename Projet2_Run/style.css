@@ -219,3 +219,91 @@ li {
 li:hover {
   border: 1px solid black;
 }
+
+/* ///////////////////// FORMAT TABLETTE ///////////////////// */
+
+@media screen and (max-width: 900px) {
+  .left-container {
+    margin: 0 30px;
+    height: 45%;
+  }
+
+  .text-container {
+    padding: 60px 30px;
+  }
+
+  .form-container {
+    width: 70%;
+  }
+
+  ul {
+    width: 65%;
+  }
+}
+
+/* ///////////////////// FORMAT MOBILE ///////////////////// */
+
+@media screen and (max-width: 704px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  h2,
+  legend {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    width: 175px;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+  }
+
+  .left-container {
+    margin: 0 20px;
+    height: 90%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .infos1,
+  .infos2 {
+    display: grid;
+    height: 400px;
+    border-top: 1px solid lightgray;
+  }
+
+  .infos1,
+  .infos2 {
+    grid-template-columns: 1fr;
+  }
+
+  .img-container-left,
+  .img-container-right {
+    display: none;
+  }
+
+  .text-container {
+    padding: 30px 20px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  ul {
+    width: 50%;
+  }
+
+  li {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
