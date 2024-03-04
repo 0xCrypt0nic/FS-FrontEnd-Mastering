@@ -38,7 +38,7 @@ h2 {
   letter-spacing: 1px;
 }
 .btn:hover {
-  background: lightgray;
+  border: 1px solid black;
 }
 
 /* ///////////////////// HEADER ///////////////////// */
@@ -48,7 +48,6 @@ header {
   grid-template-columns: 50% 50%;
   height: 100vh;
   background: url(./assets/img/banner.jpg) center/cover;
-  border-bottom: 1px solid lightgray;
 }
 
 .header-left {
@@ -71,24 +70,38 @@ h1 {
   letter-spacing: 2px;
 }
 
+/* ///////////////////// INFOS GENERALES ///////////////////// */
+
+.infos1,
+.infos2 {
+  display: grid;
+  height: 400px;
+  border-top: 1px solid lightgray;
+}
+
 /* ///////////////////// INFOS1 ///////////////////// */
 
 .infos1 {
-  display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
+}
+
+.img-container-left {
+  background: url(./assets/img/img-left.jpg) center/cover;
 }
 
 /* ///////////////////// INFOS2 ///////////////////// */
 
 .infos2 {
-  display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 65% 35%;
 }
 
-.img-container {
-  border: 1px solid red;
+.img-container-right {
+  background: url(./assets/img/img-right.jpg) center/cover;
 }
 
-img {
-  width: 100%;
+.text-container {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
