@@ -21,7 +21,8 @@ p {
   line-height: 30px;
 }
 
-h2 {
+h2,
+legend {
   font-size: 2rem;
 }
 
@@ -104,4 +105,82 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+/* ///////////////////// FORM ///////////////////// */
+
+.form-contact {
+  border-top: 1px solid lightgray;
+}
+
+.form-container {
+  width: 50%;
+  margin: 50px auto;
+}
+
+input[type="text"],
+textarea {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+input[type="text"] {
+  height: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "legend legend"
+    "namelabel emaillabel"
+    "name email"
+    "mlabel mlabel"
+    "mess mess"
+    "btn btn";
+  text-align: center;
+}
+
+form > * {
+  margin: 10px 5px;
+}
+
+legend {
+  grid-area: legend;
+}
+
+#namelabel {
+  grid-area: namelabel;
+}
+
+#name {
+  grid-area: name;
+}
+
+#emaillabel {
+  grid-area: emaillabel;
+}
+
+#email {
+  grid-area: email;
+}
+
+#messagelabel {
+  grid-area: mlabel;
+}
+
+#message {
+  grid-area: mess;
+  height: 150px;
+  resize: none;
+}
+
+#btnform {
+  grid-area: btn;
 }
