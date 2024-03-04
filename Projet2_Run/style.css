@@ -183,4 +183,5 @@ legend {
 
 #btnform {
   grid-area: btn;
+  margin: 10px auto;
 }
