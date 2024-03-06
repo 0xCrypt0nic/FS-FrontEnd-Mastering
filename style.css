@@ -11,6 +11,10 @@
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+}
+
 #cssproject {
   display: flex;
   justify-content: space-evenly;
@@ -41,6 +45,7 @@
 }
 
 .card-btn {
+  cursor: pointer;
   border: 1px solid black;
   width: 200px;
   height: 40px;
@@ -49,8 +54,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
-.card-btn a:visited {
-  text-decoration: none;
+.card-btn:hover {
+  transform: scale(1.1);
 }
