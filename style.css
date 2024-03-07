@@ -1,41 +1,41 @@
 @font-face {
-  font-family: "WorkSans";
-  src: url(./assets/font/WorkSans-VariableFont_wght.ttf);
+  font-family: "Roboto";
+  src: url(./assets/font/RobotoCondensed-VariableFont_wght.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "WorkSans", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(43, 43, 43);
 }
 
 a {
   text-decoration: none;
 }
 
-#cssproject {
+.project-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 50px 0;
   height: 450px;
 }
 
 .projectcard {
-  border: 1px solid red;
+  border: 2px solid rgb(221, 221, 221);
   height: 100%;
   display: grid;
-  grid-template-rows: 70% 15% 15%;
-  border-radius: 10px;
+  grid-template-rows: 70% 30%;
   overflow: hidden;
   text-align: center;
-}
-
-.projectcard h3 {
-  font-size: 1.5rem;
-  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 
 .card-img {
@@ -45,18 +45,86 @@ a {
 }
 
 .card-btn {
-  cursor: pointer;
-  border: 1px solid black;
+  --b: 2px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: rgb(221, 221, 221);
+
   width: 200px;
-  height: 40px;
-  margin: 0 auto;
-  border-radius: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
+  padding: 20px;
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.card-btn:hover {
-  transform: scale(1.1);
+.card-btn:hover,
+.card-btn:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.card-btn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/*//////////// WEB RESPONSIVE ////////////*/
+
+@media screen and (max-width: 1250px) {
+  .project-container {
+    height: 380px;
+  }
+
+  .projectcard {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .project-container {
+    height: 330px;
+  }
+
+  .projectcard {
+    width: 250px;
+  }
+
+  .card-btn {
+    width: 180px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .project-container {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projectcard {
+    margin: 5px 0;
+    width: 400px;
+  }
+
+  .card-img {
+    width: 100%;
+  }
 }
