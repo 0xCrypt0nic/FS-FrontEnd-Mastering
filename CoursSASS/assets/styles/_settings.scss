@@ -1,0 +1,19 @@
+// VARIABLES
+
+$color1: rgb(239, 60, 90);
+$color2: orange;
+$color3: cyan;
+$white: rgb(236, 233, 233);
+$black: rgb(16, 15, 15);
+
+// MIXINS
+
+@mixin centerChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: $color2;
+}
