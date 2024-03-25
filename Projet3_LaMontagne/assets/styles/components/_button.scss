@@ -1,0 +1,41 @@
+.btn{
+    border: 1px solid $black;
+    width: 150px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover{
+        color: $grey;
+        border: 1px solid $grey;
+    }
+}
+
+// Boutons ronds (Fleche du Header + Réseaux sociaux du footer)
+
+.btn-rond{
+    border: 1px solid $grey;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    @include centerChild;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover{
+        border: 1px solid $black;
+    }
+}
+
+#btn-arrow{
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover{
+        color: $grey;
+        border: 1px solid $grey;
+    }
+}

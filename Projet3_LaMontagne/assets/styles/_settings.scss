@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "MerriW";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+// VARIABLES
+$black: black;
+$grey: grey;
+$white: white;
+$font1 : "Inter", sans-serif;
+$font2: "MerriW", sans-serif;
+
+// MIXINS
+@mixin centerChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: $font1;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+}

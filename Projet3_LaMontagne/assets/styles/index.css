@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "MerriW";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.btn {
+  border: 1px solid black;
+  width: 150px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.btn-rond {
+  border: 1px solid grey;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.btn-rond:hover {
+  border: 1px solid black;
+}
+
+#btn-arrow {
+  color: white;
+  border: 1px solid white;
+}
+#btn-arrow:hover {
+  color: grey;
+  border: 1px solid grey;
+}/*# sourceMappingURL=index.css.map */
