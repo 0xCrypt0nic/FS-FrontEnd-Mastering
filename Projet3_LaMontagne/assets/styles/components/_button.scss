@@ -8,10 +8,11 @@
     cursor: pointer;
     transition: 0.2s ease;
     background: transparent;
+}
 
-    &:hover{
-        transform: scale(1.1);
-    }
+form .btn{
+    color: $darkgrey;
+    border: 1px solid $darkgrey;
 }
 
 // Boutons ronds (Fleche du Header + Réseaux sociaux du footer)
@@ -24,10 +25,6 @@
     @include centerChild;
     cursor: pointer;
     transition: 0.2s ease;
-
-    &:hover{
-        transform: scale(1.1);
-    }
 }
 
 #btn-arrow{

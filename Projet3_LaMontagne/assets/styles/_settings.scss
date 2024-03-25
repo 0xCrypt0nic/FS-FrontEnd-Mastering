@@ -9,9 +9,10 @@
 }
 
 // VARIABLES
-$black: black;
-$grey: grey;
-$white: white;
+$black: rgb(13, 12, 12);
+$grey: rgb(144, 144, 144);
+$darkgrey: rgb(104, 103, 103);
+$white: rgb(245, 241, 241);
 $font1 : "Inter", sans-serif;
 $font2: "MerriW", sans-serif;
 
@@ -37,4 +38,8 @@ li{
 body{
     min-height: 100vh;
     background: url("../img/bg.jpg") center/cover fixed;
+}
+
+img{
+    width: 200px;
 }

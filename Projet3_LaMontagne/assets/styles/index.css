@@ -23,8 +23,12 @@ body {
   background: url("../img/bg.jpg") center/cover fixed;
 }
 
+img {
+  width: 200px;
+}
+
 .btn {
-  border: 1px solid black;
+  border: 1px solid rgb(13, 12, 12);
   width: 150px;
   text-transform: uppercase;
   padding: 10px 0;
@@ -35,13 +39,14 @@ body {
   transition: 0.2s ease;
   background: transparent;
 }
-.btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+
+form .btn {
+  color: rgb(104, 103, 103);
+  border: 1px solid rgb(104, 103, 103);
 }
 
 .btn-rond {
-  border: 1px solid grey;
+  border: 1px solid rgb(144, 144, 144);
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -58,12 +63,37 @@ body {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-.btn-rond:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
 
 #btn-arrow {
-  color: white;
-  border: 1px solid white;
+  color: rgb(245, 241, 241);
+  border: 1px solid rgb(245, 241, 241);
+}
+
+header {
+  border: 2px solid red;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container {
+  border: 3px solid yellow;
+  text-align: center;
+  color: rgb(245, 241, 241);
+  width: 700px;
+}
+.header-container h1 {
+  font-size: 3.5rem;
+}
+.header-container p {
+  font-style: italic;
+  font-family: "MerriW", sans-serif;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */

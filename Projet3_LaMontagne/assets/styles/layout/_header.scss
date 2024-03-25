@@ -1,0 +1,22 @@
+header{
+    border: 2px solid red;
+    height: 100vh;
+    @include centerChild;
+}
+
+.header-container{
+    border: 3px solid yellow;
+    text-align: center;
+    color: $white;
+    width: 700px;
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    p{
+        font-style: italic;
+        font-family: $font2;
+        font-size: 0.9rem;
+    }
+}
