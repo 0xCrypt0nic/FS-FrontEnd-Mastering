@@ -20,6 +20,7 @@ li {
 
 body {
   min-height: 100vh;
+  background: url("../img/bg.jpg") center/cover fixed;
 }
 
 .btn {
@@ -32,10 +33,11 @@ body {
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  background: transparent;
 }
 .btn:hover {
-  color: grey;
-  border: 1px solid grey;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn-rond {
@@ -57,14 +59,11 @@ body {
   transition: 0.2s ease;
 }
 .btn-rond:hover {
-  border: 1px solid black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #btn-arrow {
   color: white;
   border: 1px solid white;
-}
-#btn-arrow:hover {
-  color: grey;
-  border: 1px solid grey;
 }/*# sourceMappingURL=index.css.map */
