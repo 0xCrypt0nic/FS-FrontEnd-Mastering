@@ -12,7 +12,7 @@
 $black: rgb(13, 12, 12);
 $grey: rgb(181, 181, 181);
 $darkgrey: rgb(104, 103, 103);
-$white: rgb(245, 241, 241);
+$white: rgb(234, 232, 232);
 $font1 : "Inter", sans-serif;
 $font2: "MerriW", sans-serif;
 
@@ -21,6 +21,26 @@ $font2: "MerriW", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin sizing{
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+@mixin italic{
+    font-family: $font2;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 

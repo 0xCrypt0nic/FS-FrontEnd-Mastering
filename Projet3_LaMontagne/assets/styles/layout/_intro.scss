@@ -1,0 +1,51 @@
+.intro{
+    @include sizing;
+    @include flexcolumn;
+
+    background: $white;
+    position: relative;
+
+    h4{
+        font-family: $font2;
+        margin: 40px;
+        color: $darkgrey;
+
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 1px;
+            background-color: $grey;
+        }
+
+        &::after{
+            transform: translate(10%, 10px);
+        }
+
+        &::before{
+            transform: translate(-110%, 10px);
+        }
+    }
+
+    img{
+        width: 80%;
+    }
+
+    h2, p{
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 2px
+    }
+
+    p{
+        @include italic;
+        line-height: 30px;
+        color: $darkgrey;
+    }
+}

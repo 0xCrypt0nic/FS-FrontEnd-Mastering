@@ -38,6 +38,7 @@ img {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   background: transparent;
+  margin: 30px 0;
 }
 
 form .btn {
@@ -65,8 +66,8 @@ form .btn {
 }
 
 #btn-arrow {
-  color: rgb(245, 241, 241);
-  border: 1px solid rgb(245, 241, 241);
+  color: rgb(234, 232, 232);
+  border: 1px solid rgb(234, 232, 232);
 }
 
 header {
@@ -84,7 +85,7 @@ header {
 
 .header-container {
   text-align: center;
-  color: rgb(245, 241, 241);
+  color: rgb(234, 232, 232);
   width: 700px;
   height: 40%;
   display: -webkit-box;
@@ -104,8 +105,8 @@ header {
   font-size: 3.5rem;
 }
 .header-container p {
-  font-style: italic;
   font-family: "MerriW", sans-serif;
+  font-style: italic;
   font-size: 0.9rem;
 }
 
@@ -120,9 +121,9 @@ nav {
 .nav-container {
   background: rgba(255, 255, 255, 0.307);
   width: 70%;
-  height: 100%;
   min-width: 800px;
   margin: 0 auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +156,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
-  color: rgb(245, 241, 241);
+  color: rgb(234, 232, 232);
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -172,4 +173,65 @@ nav {
 .nav-container #social li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.intro {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: rgb(234, 232, 232);
+  position: relative;
+}
+.intro h4 {
+  font-family: "MerriW", sans-serif;
+  margin: 40px;
+  color: rgb(104, 103, 103);
+}
+.intro h4::after, .intro h4::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: rgb(181, 181, 181);
+}
+.intro h4::after {
+  -webkit-transform: translate(10%, 10px);
+          transform: translate(10%, 10px);
+}
+.intro h4::before {
+  -webkit-transform: translate(-110%, 10px);
+          transform: translate(-110%, 10px);
+}
+.intro img {
+  width: 80%;
+}
+.intro h2, .intro p {
+  width: 50%;
+  margin: 20px auto;
+}
+.intro h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.intro p {
+  font-family: "MerriW", sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 30px;
+  color: rgb(104, 103, 103);
 }/*# sourceMappingURL=index.css.map */
