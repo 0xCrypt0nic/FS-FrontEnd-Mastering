@@ -5,6 +5,13 @@ footer{
 
     display: grid;
     grid-template-columns: 50% 50%;
+    font-size: 0.7rem;
+
+    label, span{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
 
     .footer-left{
         border-right: 1px solid $grey;
@@ -16,13 +23,6 @@ footer{
             flex-direction: column;
             justify-content: space-around;
             width: 75%;
-            font-size: 0.8rem;
-
-
-            label{
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
 
             #name, #email, #message{
                 border: 1px solid $grey;
@@ -56,6 +56,23 @@ footer{
         .line{
             display: grid;
             grid-template-columns: 25% 75%;
+
+            .left, .right{
+                @include centerChild;
+            }
+
+            .right{
+                justify-content: left;
+                p{
+                    font-family: $font2;
+                }
+
+                ul{
+                    display: flex;
+                    width: 60%;
+                    justify-content: space-around;
+                }
+            }
         }
     }
 }

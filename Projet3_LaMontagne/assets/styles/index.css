@@ -292,6 +292,11 @@ footer {
   margin: 30px auto;
   display: grid;
   grid-template-columns: 50% 50%;
+  font-size: 0.7rem;
+}
+footer label, footer span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 footer .footer-left {
   border-right: 1px solid rgb(181, 181, 181);
@@ -317,11 +322,6 @@ footer .footer-left form {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 75%;
-  font-size: 0.8rem;
-}
-footer .footer-left form label {
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 footer .footer-left form #name, footer .footer-left form #email, footer .footer-left form #message {
   border: 1px solid rgb(181, 181, 181);
@@ -349,4 +349,31 @@ footer .footer-right {
 footer .footer-right .line {
   display: grid;
   grid-template-columns: 25% 75%;
+}
+footer .footer-right .line .left, footer .footer-right .line .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-right .line .right {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+footer .footer-right .line .right p {
+  font-family: "MerriW", sans-serif;
+}
+footer .footer-right .line .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */
