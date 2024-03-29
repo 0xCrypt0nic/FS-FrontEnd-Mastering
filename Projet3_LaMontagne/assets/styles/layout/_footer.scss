@@ -1,0 +1,61 @@
+footer{
+    @include sizing;
+    background: lightgray;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .footer-left{
+        border-right: 1px solid $grey;
+        @include centerChild;
+        padding: 30px 0;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 75%;
+            font-size: 0.8rem;
+
+
+            label{
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            #name, #email, #message{
+                border: 1px solid $grey;
+                background :transparent;
+                font-family: $font2;
+                padding: 5px;
+                margin: 15px 0;
+                outline: 0;
+                border-radius: 5px;
+
+                &:focus{
+                    border: 1px solid $black;
+                }
+            }
+
+            #message{
+                resize: none;
+            }
+        }
+
+        .btn{
+            color: $black;
+            margin: 15px 0;
+        }
+    }
+
+    .footer-right{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+
+        .line{
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+    }
+}
