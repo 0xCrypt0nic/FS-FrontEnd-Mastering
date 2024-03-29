@@ -239,11 +239,47 @@ nav {
   margin: 0 auto;
   background: rgb(234, 232, 232);
   border-top: 1px solid rgb(181, 181, 181);
-  padding: 40px 0;
+  height: 650px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.detail img {
+.detail .card-detail {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail .card-detail h4, .detail .card-detail p {
+  font-family: "MerriW", sans-serif;
+  font-size: 0.8rem;
+  line-height: 30px;
+  color: rgb(104, 103, 103);
+}
+.detail .card-detail h3 {
+  text-transform: uppercase;
+  width: 210px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+.detail .card-detail img {
   width: 80%;
   min-width: 350px;
+}
+.detail .card-detail p {
+  width: 80%;
+  margin: 20px 0;
+}
+.detail .card-detail:first-child {
+  border-right: 1px solid rgb(181, 181, 181);
 }/*# sourceMappingURL=index.css.map */
