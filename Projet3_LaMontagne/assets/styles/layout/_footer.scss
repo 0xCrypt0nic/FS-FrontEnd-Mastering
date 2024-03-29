@@ -10,6 +10,7 @@ footer{
     label, span{
         text-transform: uppercase;
         letter-spacing: 1px;
+        color: $colorlibfooter;
     }
 
 
@@ -44,7 +45,7 @@ footer{
         }
 
         .btn{
-            color: $black;
+            color: $colorlibfooter;
             margin: 15px 0;
         }
     }
@@ -56,15 +57,19 @@ footer{
         .line{
             display: grid;
             grid-template-columns: 25% 75%;
+            border-top: 1px solid $grey;
 
             .left, .right{
-                @include centerChild;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding-left: 20px;
             }
 
             .right{
-                justify-content: left;
                 p{
                     font-family: $font2;
+                    color: rgb(169, 168, 168);
                 }
 
                 ul{
@@ -72,6 +77,10 @@ footer{
                     width: 60%;
                     justify-content: space-around;
                 }
+            }
+
+            &:first-child{
+                border: none;
             }
         }
     }

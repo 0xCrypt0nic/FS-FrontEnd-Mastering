@@ -163,7 +163,7 @@ nav {
 .nav-container #navigation li:first-child,
 .nav-container #navigation li:hover {
   color: rgb(13, 12, 12);
-  background: rgb(181, 181, 181);
+  background: rgb(217, 217, 217);
 }
 .nav-container #social li:hover {
   -webkit-transform: scale(1.2);
@@ -297,6 +297,7 @@ footer {
 footer label, footer span {
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: rgb(105, 105, 105);
 }
 footer .footer-left {
   border-right: 1px solid rgb(181, 181, 181);
@@ -339,7 +340,7 @@ footer .footer-left form #message {
   resize: none;
 }
 footer .footer-left .btn {
-  color: rgb(13, 12, 12);
+  color: rgb(105, 105, 105);
   margin: 15px 0;
 }
 footer .footer-right {
@@ -349,25 +350,23 @@ footer .footer-right {
 footer .footer-right .line {
   display: grid;
   grid-template-columns: 25% 75%;
+  border-top: 1px solid rgb(181, 181, 181);
 }
 footer .footer-right .line .left, footer .footer-right .line .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-footer .footer-right .line .right {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
 }
 footer .footer-right .line .right p {
   font-family: "MerriW", sans-serif;
+  color: rgb(169, 168, 168);
 }
 footer .footer-right .line .right ul {
   display: -webkit-box;
@@ -376,4 +375,7 @@ footer .footer-right .line .right ul {
   width: 60%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+footer .footer-right .line:first-child {
+  border: none;
 }/*# sourceMappingURL=index.css.map */
