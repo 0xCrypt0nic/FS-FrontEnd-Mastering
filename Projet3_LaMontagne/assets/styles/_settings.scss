@@ -28,6 +28,11 @@ $font2: "MerriW", sans-serif;
     width: 70%;
     min-width: 700px;
     margin: 0 auto;
+
+    @media screen and (max-width: 750px){
+        width: 90%;
+        min-width: 0;
+    }
 }
 
 @mixin italic{

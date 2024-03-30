@@ -37,12 +37,20 @@
     h2, p{
         width: 50%;
         margin: 20px auto;
+
+        @media screen and (max-width: 750px){
+            width: 70%;
+        }
     }
 
     h2{
         text-transform: uppercase;
         font-size: 3rem;
-        letter-spacing: 2px
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 750px){
+            font-size: 2rem;
+        }
     }
 
     p{

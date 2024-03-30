@@ -8,6 +8,11 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 750px){
+        height: 100%;
+        display: block;
+    }
+
     .card-detail{
         padding: 40px 0;
 

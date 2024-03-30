@@ -7,6 +7,10 @@ footer{
     grid-template-columns: 50% 50%;
     font-size: 0.7rem;
 
+    @media screen and (max-width: 750px){
+        grid-template-columns: 1fr;
+    }
+
     label, span{
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -54,10 +58,15 @@ footer{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
 
+        @media screen and (max-width: 750px){
+            grid-template-rows: 1fr;
+        }
+
         .line{
             display: grid;
             grid-template-columns: 25% 75%;
             border-top: 1px solid $grey;
+            padding: 20px 0;            
 
             .left, .right{
                 display: flex;
@@ -81,6 +90,10 @@ footer{
 
             &:first-child{
                 border: none;
+
+                @media screen and (max-width: 750px){
+                    border-top: 1px solid $grey;
+                }
             }
         }
     }

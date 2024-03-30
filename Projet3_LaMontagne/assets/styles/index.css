@@ -35,6 +35,13 @@ body {
   transition: 0.2s ease;
   background: transparent;
 }
+@media screen and (max-width: 750px) {
+  .btn {
+    width: 200px;
+    padding: 15px 0;
+    font-size: 0.7rem;
+  }
+}
 
 form .btn {
   color: rgb(104, 103, 103);
@@ -64,6 +71,13 @@ form .btn {
 #btn-arrow {
   color: rgb(234, 232, 232);
   border: 1px solid rgb(234, 232, 232);
+}
+@media screen and (max-width: 750px) {
+  #btn-arrow {
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 header {
@@ -100,6 +114,12 @@ header {
 .header-container h1 {
   font-size: 3.5rem;
 }
+@media screen and (max-width: 750px) {
+  .header-container h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+}
 .header-container p {
   font-family: "MerriW", sans-serif;
   font-style: italic;
@@ -129,6 +149,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 750px) {
+  .nav-container {
+    width: 90%;
+    min-width: 0;
+  }
 }
 .nav-container ul {
   display: -webkit-box;
@@ -170,6 +196,17 @@ nav {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+@media screen and (max-width: 750px) {
+  .nav-container #social {
+    display: none;
+  }
+  .nav-container #navigation {
+    width: 100%;
+  }
+  .nav-container #navigation li {
+    width: 100%;
+  }
+}
 
 .intro {
   width: 70%;
@@ -192,6 +229,12 @@ nav {
   background: rgb(234, 232, 232);
   position: relative;
   padding: 50px 0;
+}
+@media screen and (max-width: 750px) {
+  .intro {
+    width: 90%;
+    min-width: 0;
+  }
 }
 .intro h4 {
   font-family: "MerriW", sans-serif;
@@ -221,10 +264,20 @@ nav {
   width: 50%;
   margin: 20px auto;
 }
+@media screen and (max-width: 750px) {
+  .intro h2, .intro p {
+    width: 70%;
+  }
+}
 .intro h2 {
   text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 750px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
 }
 .intro p {
   font-family: "MerriW", sans-serif;
@@ -243,6 +296,18 @@ nav {
   height: 650px;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 750px) {
+  .detail {
+    width: 90%;
+    min-width: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .detail {
+    height: 100%;
+    display: block;
+  }
 }
 .detail .card-detail {
   padding: 40px 0;
@@ -293,6 +358,17 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   font-size: 0.7rem;
+}
+@media screen and (max-width: 750px) {
+  footer {
+    width: 90%;
+    min-width: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
 footer label, footer span {
   text-transform: uppercase;
@@ -347,10 +423,16 @@ footer .footer-right {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
 }
+@media screen and (max-width: 750px) {
+  footer .footer-right {
+    grid-template-rows: 1fr;
+  }
+}
 footer .footer-right .line {
   display: grid;
   grid-template-columns: 25% 75%;
   border-top: 1px solid rgb(181, 181, 181);
+  padding: 20px 0;
 }
 footer .footer-right .line .left, footer .footer-right .line .right {
   display: -webkit-box;
@@ -378,4 +460,9 @@ footer .footer-right .line .right ul {
 }
 footer .footer-right .line:first-child {
   border: none;
+}
+@media screen and (max-width: 750px) {
+  footer .footer-right .line:first-child {
+    border-top: 1px solid rgb(181, 181, 181);
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -8,6 +8,12 @@
     cursor: pointer;
     transition: 0.2s ease;
     background: transparent;
+
+    @media screen and (max-width: 750px){
+        width: 200px;
+        padding: 15px 0;
+        font-size: 0.7rem;
+    }
 }
 
 form .btn{
@@ -31,4 +37,10 @@ form .btn{
 #btn-arrow{
     color: $white;
     border: 1px solid $white;
+
+    @media screen and (max-width: 750px){
+        font-size: 1.5rem;
+        width: 60px;
+        height: 60px;
+    }
 }

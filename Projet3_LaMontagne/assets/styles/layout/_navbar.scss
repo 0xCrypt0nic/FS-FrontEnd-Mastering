@@ -42,7 +42,22 @@ nav{
         }
     }
 
-    #social li:hover{
-        transform: scale(1.2);
+    #social{
+        li:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        #social{
+            display: none;
+        }
+
+        #navigation{
+            width: 100%;
+            li{
+                width: 100%;
+            }
+        }
     }
 }
