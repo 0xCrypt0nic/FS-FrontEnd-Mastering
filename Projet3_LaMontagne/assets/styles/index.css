@@ -58,6 +58,7 @@ form .btn {
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  margin-right: 5px;
 }
 
 #btn-arrow {
@@ -116,7 +117,7 @@ nav {
 .nav-container {
   background: rgba(255, 255, 255, 0.307);
   width: 70%;
-  min-width: 800px;
+  min-width: 700px;
   margin: 0 auto;
   height: 100%;
   display: -webkit-box;
@@ -172,7 +173,7 @@ nav {
 
 .intro {
   width: 70%;
-  min-width: 800px;
+  min-width: 700px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,7 +236,7 @@ nav {
 
 .detail {
   width: 70%;
-  min-width: 800px;
+  min-width: 700px;
   margin: 0 auto;
   background: rgb(234, 232, 232);
   border-top: 1px solid rgb(181, 181, 181);
@@ -274,7 +275,6 @@ nav {
 }
 .detail .card-detail img {
   width: 80%;
-  min-width: 350px;
 }
 .detail .card-detail p {
   width: 80%;
@@ -286,7 +286,7 @@ nav {
 
 footer {
   width: 70%;
-  min-width: 800px;
+  min-width: 700px;
   margin: 0 auto;
   background: lightgray;
   margin: 30px auto;

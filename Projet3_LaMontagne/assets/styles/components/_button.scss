@@ -25,6 +25,7 @@ form .btn{
     @include centerChild;
     cursor: pointer;
     transition: 0.2s ease;
+    margin-right: 5px;
 }
 
 #btn-arrow{
