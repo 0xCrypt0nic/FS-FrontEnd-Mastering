@@ -1,1 +1,28 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, serif;
+  background: #21201e;
+}/*# sourceMappingURL=index.css.map */
