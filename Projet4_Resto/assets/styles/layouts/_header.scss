@@ -43,4 +43,39 @@ header{
             }
         }
     }
+
+    .header-text{
+        @include childCenter;
+        height: 88vh;
+
+        div{
+            margin-top: -225px;
+
+            h2{
+                font-family: $font1;
+                font-size: 3rem;
+                font-weight: 100;
+                color: $color1;
+            }
+
+            h1{
+                font-size: 3.2rem;
+                letter-spacing: 10px;
+                font-weight: 700;
+                margin-top: -25px;
+                font-family: $font2;
+            }
+
+            img{
+                height: 27px;
+                margin: 32px 0;
+            }
+
+            h6{
+                font-size: 0.75rem;
+                letter-spacing: 6px;
+                font-weight: 200;
+            }
+        }
+    }
 }
