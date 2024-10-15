@@ -369,6 +369,11 @@ header .header-text div h6 {
 .section4 {
   padding: 50px 20px 90px;
 }
+@media screen and (max-width: 680px) {
+  .section4 {
+    display: none;
+  }
+}
 .section4 .events-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -392,7 +397,7 @@ header .header-text div h6 {
 }
 .section4 .events-container .event-grid {
   display: grid;
-  grid-template-columns: 56% 44%;
+  grid-template-columns: 58% 42%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a b" "c b";
   gap: 20px;
@@ -495,4 +500,40 @@ header .header-text div h6 {
 }
 .section4 .events-container .event-grid .event-3 .address h5 {
   padding: 45px 0;
+}
+
+.section5 {
+  padding: 70px 0 230px;
+  position: relative;
+}
+.section5:after {
+  content: "";
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  background: url(../img/gmap.jpg) center/cover;
+  left: 0;
+  bottom: 0;
+}
+.section5 .quote-container {
+  background: #eee;
+  z-index: 3;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 65px 70px;
+  width: 90%;
+  -webkit-box-shadow: 0 0 3px #333;
+          box-shadow: 0 0 3px #333;
+}
+.section5 .quote-container:before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=index.css.map */
