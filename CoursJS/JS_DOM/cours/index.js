@@ -3,7 +3,7 @@
 //const baliseHTML = document.querySelector("h4");
 //baliseHTML.style.background = "blue";
 
-// CLICK EVENT
+// ========================= CLICK EVENT =========================
 const questionContainer = document.querySelector(".click-event");
 const btn1 = document.querySelector("#btn-1");
 const btn2 = document.getElementById("btn-2");
@@ -23,7 +23,7 @@ btn2.addEventListener("click", () => {
   response.classList.add("show-response");
 });
 
-// MOUSE EVENTS
+// ========================= MOUSE EVENTS =========================
 const mousemove = document.querySelector(".mousemove");
 
 window.addEventListener("mousemove", (e) => {
@@ -49,4 +49,21 @@ questionContainer.addEventListener("mouseout", () => {
 
 response.addEventListener("mouseover", () => {
   response.style.transform = "rotate(2deg)";
+});
+
+// ========================= KEY PRESS =========================
+
+const keypressContainer = document.querySelector(".keypress");
+const key = document.getElementById("key");
+const ring = (fileName) => {
+  const audio = new Audio();
+  audio.src = `./${fileName}.mp3`;
+  audio.play();
+};
+
+document.addEventListener("keypress", (e) => {
+  key.textContent = e.key;
+  if (e.key === "r") {
+    ring("Enter");
+  }
 });
