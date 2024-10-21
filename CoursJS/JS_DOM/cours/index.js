@@ -121,3 +121,27 @@ boxes.forEach((box) => {
     console.log(e.target);
   });
 });
+
+// =================== ADDEVENTLISTENER vs ONCLICK ===================
+//document.body.onclick = () => {
+//  console.log("click");
+//};
+
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("Click 1");
+  },
+  false
+);
+
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("Click 2");
+  },
+  true
+);
+
+// En mettant un 3e paramètre, booléen à True, on utilise le usecapture
+// cela permet de prioriser l'évènement.
