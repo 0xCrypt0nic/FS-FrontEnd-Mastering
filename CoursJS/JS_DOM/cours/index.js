@@ -145,3 +145,12 @@ document.body.addEventListener(
 
 // En mettant un 3e paramètre, booléen à True, on utilise le usecapture
 // cela permet de prioriser l'évènement.
+
+// =================== STOP PROPAGATION ===================
+
+questionContainer.addEventListener("click", (e) => {
+  alert("test");
+  e.stopPropagation();
+});
+
+// Pour retirer un event => removeEventListener.
