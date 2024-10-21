@@ -112,3 +112,12 @@ form.addEventListener("submit", (e) => {
 window.addEventListener("load", () => {
   console.log("Document chargé");
 });
+
+// ========================= FOR EACH =========================
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
