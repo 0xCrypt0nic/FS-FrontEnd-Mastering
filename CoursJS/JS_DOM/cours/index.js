@@ -180,12 +180,12 @@ setTimeout(() => {
   questionContainer.style.borderRadius = "300px";
 }, 2000);
 
-// Set Interval
+/* Set Interval
 let i = 0;
 let interval = setInterval(() => {
   i++;
   document.body.innerHTML += `<div class='box'><h2>Nouvelle Boite ${i}</h2></div>`;
-}, 1000);
+}, 1000);*/
 
 document.body.addEventListener("click", () => {
   clearInterval(interval);
@@ -207,3 +207,9 @@ console.log(navigator.geolocation);
 
 // History
 console.log(history);
+
+// =================== Set Property ===================
+window.addEventListener("mousemove", (e) => {
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layerY + "px");
+});
