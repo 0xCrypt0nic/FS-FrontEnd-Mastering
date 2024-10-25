@@ -148,9 +148,62 @@ document.body.addEventListener(
 
 // =================== STOP PROPAGATION ===================
 
-questionContainer.addEventListener("click", (e) => {
+/*questionContainer.addEventListener("click", (e) => {
   alert("test");
   e.stopPropagation();
-});
+});*/
 
 // Pour retirer un event => removeEventListener.
+
+// =================== BOM - Brower Object Model ===================
+
+console.log(window.innerHeight);
+console.log(window.scrollY);
+
+// window.open("http://google.com", "cours js", "height=600, width=800");
+// window.close(); // Ferme la fenêtre
+
+// Confirm
+btn2.addEventListener("click", () => {
+  confirm("Voulez vous vraiment vous tromper ?");
+});
+
+// Prompt
+btn1.addEventListener("click", () => {
+  let rep = prompt("Entrez votre nom !");
+
+  questionContainer.innerHTML += `<h3>Bravo ${rep} ! </h3>`;
+});
+
+// SetTimeout
+setTimeout(() => {
+  questionContainer.style.borderRadius = "300px";
+}, 2000);
+
+// Set Interval
+let i = 0;
+let interval = setInterval(() => {
+  i++;
+  document.body.innerHTML += `<div class='box'><h2>Nouvelle Boite ${i}</h2></div>`;
+}, 1000);
+
+document.body.addEventListener("click", () => {
+  clearInterval(interval);
+});
+
+/*document.body.addEventListener("click", (e) => {
+  e.target.remove();
+});*/
+
+// Objet Location
+console.log(location.href);
+console.log(location.host);
+console.log(location.pathname);
+//location.replace("http://google.fr");
+
+// Objet Navigator
+console.log(navigator.userAgent);
+console.log(navigator.geolocation);
+
+// History
+console.log(history);
