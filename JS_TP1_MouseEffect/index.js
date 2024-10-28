@@ -6,7 +6,7 @@
 
 // Donner un style de transparence aux 2 plus gros ronds (mix-blend-mode)
 
-const rond1 = document.querySelector(".rond1");
+/*const rond1 = document.querySelector(".rond1");
 const rond2 = document.querySelector(".rond2");
 const rond3 = document.querySelector(".rond3");
 window.addEventListener("mousemove", (e) => {
@@ -18,4 +18,13 @@ window.addEventListener("mousemove", (e) => {
 
   rond3.style.top = `${e.pageY}px`;
   rond3.style.left = `${e.pageX}px`;
+});*/
+
+const rond = document.querySelectorAll(".rond");
+
+window.addEventListener("mousemove", (e) => {
+  rond.forEach((mouse) => {
+    mouse.style.top = `${e.pageY}px`;
+    mouse.style.left = `${e.pageX}px`;
+  });
 });

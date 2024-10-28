@@ -17,7 +17,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
-  z-index: 4;
+  z-index: 1000;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -99,27 +100,27 @@ footer img {
   position: absolute;
   border-radius: 200px;
   transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 
 .rond1 {
-  height: 15px;
-  width: 15px;
-  background-color: gold;
-  z-index: 3;
+  height: 14px;
+  width: 14px;
+  background-color: #2128bd;
 }
 
 .rond2 {
-  height: 60px;
-  width: 60px;
-  background-color: grey;
-  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  transition: 0.1s ease-out;
 }
 
 .rond3 {
-  height: 100px;
-  width: 100px;
-  background-color: black;
-  z-index: 1;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(41, 41, 41);
+  transition: 0.15s ease-out;
 }
 
 /* ************** RESPONSIVE *************** */
