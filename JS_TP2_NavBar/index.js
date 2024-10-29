@@ -8,7 +8,7 @@
 
 let lastScrollPosition = window.scrollY;
 
-document.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
   navbar.style.top = window.scrollY > lastScrollPosition ? "-60px" : "0px";
   lastScrollPosition = window.scrollY;
 });
