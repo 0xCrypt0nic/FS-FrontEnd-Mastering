@@ -6,8 +6,11 @@ let popupClosed = false;
 window.addEventListener("scroll", () => {
   navbar.style.height = window.scrollY == 0 ? "90px" : "45px";
 
+  let scrollValue =
+    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+
   // Faire apparaitre l'image de la partie improvise
-  if (window.scrollY > 200) {
+  if (scrollValue > 0.45) {
     imgImprovise.style.opacity = 1;
     imgImprovise.style.transform = "translateX(0px)";
   } else {
@@ -16,7 +19,7 @@ window.addEventListener("scroll", () => {
   }
 
   // Faire apparaitre la popup quand on est en bas du site
-  if (window.scrollY > 1300 && !popupClosed) {
+  if (scrollValue > 0.8 && !popupClosed) {
     popup.style.opacity = 1;
     popup.style.transform = "translateX(0px)";
     console.log(popup);
