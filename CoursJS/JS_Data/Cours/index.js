@@ -46,3 +46,52 @@ let data = [
 ];
 
 //console.log(data[2].pseudo);
+
+// ====== Les Structures de contrôle ====== //
+
+if (data[0].age > data[1].age) {
+  console.log(`${data[0].pseudo} est plus âgé que ${data[1].pseudo}.`);
+} else {
+  // Valeur si fausse
+}
+
+// Boucle While
+let w = 0;
+while (w < 10) {
+  w++;
+  console.log(`La valeur de W est ${w}`);
+}
+
+// Boucle DoWhile
+let d = 0;
+do {
+  d++;
+  console.log(d);
+} while (d < 5);
+
+// Boucle For
+for (const user of data) {
+  //document.body.innerHTML += `<li>${user.pseudo}</li>`;
+}
+
+for (i = 0; i < data.length; i++) {
+  //document.body.innerHTML += `<h2>${data[i].pseudo}</h2>`;
+}
+
+// Switch
+
+document.body.addEventListener("click", (e) => {
+  switch (e.target.id) {
+    case "javascript":
+      document.body.style.background = "yellow";
+      break;
+    case "php":
+      document.body.style.background = "violet";
+      break;
+    case "python":
+      document.body.style.background = "blue";
+      break;
+    default:
+      null;
+  }
+});
