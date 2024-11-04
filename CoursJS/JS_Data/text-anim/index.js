@@ -14,12 +14,11 @@ const createLetter = () => {
   }, 2800);
 };
 
-createLetter();
-
 const loop = () => {
   setTimeout(() => {
     if (wordIndex >= array.length) {
       wordIndex = 0;
+      loop();
     } else if (letterIndex < array[wordIndex].length) {
       createLetter();
       letterIndex++;
