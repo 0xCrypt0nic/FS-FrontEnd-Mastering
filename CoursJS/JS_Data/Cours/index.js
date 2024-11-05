@@ -176,3 +176,19 @@ console.log(arrayNumber);
 //console.log(arrayNumber.filter((number) => number > 10));
 //console.log(arrayNumber.sort((x, y) => x - y));
 //arrayNumber.map((number) => (document.body.innerHTML += `<li>${number}</li>`));
+
+// ========== LES METHODES OBJETS ========== //
+
+document.body.innerHTML = data
+  .sort((a, b) => a.age - b.age)
+  .map(
+    (user) =>
+      `
+    <div class="user-card">
+      <h2>${user.pseudo}</h2>
+      <p>${user.age} ans</p>
+      <p>Status : ${user.admin ? "Administrateur" : "Membre"}</p>
+    </div>
+    `
+  )
+  .join(" ");
