@@ -135,3 +135,44 @@ console.log(Math.pow(2, 7));
 console.log(2 ** 7);
 console.log(Math.sqrt(16));
 console.log(Math.floor(Math.random() * 50));
+
+// ========== LES METHODES ARRAY ========== //
+
+let array3 = ["Javascript", "Php", "Python"];
+let array4 = ["Ruby", "Solidity"];
+
+let newArray = array3.concat(array4);
+//console.log(newArray);
+
+//let newArray = [...array3, ...array4];
+//console.log(newArray);
+
+//console.log(array3.join(" - "));
+
+//console.log(array3.slice(2));
+//console.log(newArray.slice(2, 3));
+
+//console.log(array3.indexOf("Php"));
+
+//array3.forEach((language) => console.log(language));
+
+//console.log(array3.every((language) => language == "Php"));
+//console.log(array3.some((language) => language == "Php"));
+
+//console.log(array3.shift());
+//console.log(array3.pop());
+
+//const restArray = array3.splice(1, 1, "C++");
+//console.log(array3);
+
+// ** IMPORTANT ** //
+let arrayNumber = [4, 74, 28, 12, 1];
+console.log(arrayNumber.reduce((x, y) => x + y));
+
+arrayNumber.push(17);
+console.log(arrayNumber);
+
+// FILTER / SORT / MAP
+//console.log(arrayNumber.filter((number) => number > 10));
+//console.log(arrayNumber.sort((x, y) => x - y));
+//arrayNumber.map((number) => (document.body.innerHTML += `<li>${number}</li>`));
