@@ -179,7 +179,7 @@ console.log(arrayNumber);
 
 // ========== LES METHODES OBJETS ========== //
 
-document.body.innerHTML = data
+document.body.innerHTML += data
   .sort((a, b) => a.age - b.age)
   .map(
     (user) =>
@@ -243,3 +243,11 @@ const dateDestructuring = (chaine) => {
 };
 
 console.log(dateDestructuring(iso));
+
+// ========== LES DATASETS ========== //
+
+const h3js = document.getElementById("javascript");
+//console.log(h3js.dataset);
+
+const h3 = document.querySelectorAll("h3");
+h3.forEach((language) => console.log(language.dataset.lang));
