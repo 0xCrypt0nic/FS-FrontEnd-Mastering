@@ -218,3 +218,28 @@ const dateParser = (chaine) => {
 console.log(dateParser(date));
 console.log(dateParser(timestamp));
 console.log(dateParser(iso));
+
+// ========== LE DESTRUCTURING ========== //
+
+let moreData = {
+  destVar: ["Element 1", "Element2"],
+};
+
+console.log(moreData.destVar[0]);
+
+const { destVar } = moreData;
+
+console.log(destVar[0]);
+
+let array5 = [70, 80, 90];
+let [x, y, z] = array5;
+console.log(x);
+
+console.log(iso);
+const dateDestructuring = (chaine) => {
+  let newDate = chaine.split("T")[0];
+  let [y, m, d] = newDate.split("-");
+  return [d, m, y].join("/");
+};
+
+console.log(dateDestructuring(iso));
