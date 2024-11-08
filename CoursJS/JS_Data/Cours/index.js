@@ -251,3 +251,17 @@ const h3js = document.getElementById("javascript");
 
 const h3 = document.querySelectorAll("h3");
 h3.forEach((language) => console.log(language.dataset.lang));
+
+// ========== LES REGEX ========== //
+
+let mail = "n.greneche45@gmail.com";
+
+console.log(mail.replace(/gre/, "de"));
+
+console.log(mail.match(/gren/));
+
+console.log(mail.match(/[\w_-]+@[\w-]+\.[a-z]{2,4}$/));
+
+let separator = 1545412567846484;
+
+console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
