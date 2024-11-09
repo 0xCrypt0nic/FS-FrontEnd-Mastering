@@ -2,6 +2,7 @@ const inputs = document.querySelectorAll(
   'input[type="text"], input[type="password"]'
 );
 
+const progressBar = document.getElementById("progress-bar");
 let pseudo, email, password, confirmPass;
 
 // Affichage des messages d'erreurs / confirmation.
@@ -46,7 +47,30 @@ const emailChecker = (value) => {
 };
 
 // Verification du PASSWORD.
-const passwordChecker = (value) => {};
+const passwordChecker = (value) => {
+  // Nettoyage des ProgressBar.
+  progressBar.classList = "";
+  if (
+    !value.match(
+      /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/
+    )
+  ) {
+    errorDisplay(
+      "password",
+      "Min 8 caractères (une maj, un chiffre, un caractère spécial)"
+    );
+    progressBar.classList.add("progressRed");
+    password = null;
+  } else if (value.length < 12) {
+    errorDisplay("password", "", true);
+    progressBar.classList.add("progressBlue");
+    password = value;
+  } else {
+    errorDisplay("password", "", true);
+    progressBar.classList.add("progressGreen");
+    password = value;
+  }
+};
 
 // Verification du CONFIRM PASSWORD.
 const confirmChecker = (value) => {};
