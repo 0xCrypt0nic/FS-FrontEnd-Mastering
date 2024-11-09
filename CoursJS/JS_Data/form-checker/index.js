@@ -1,3 +1,4 @@
+const form = document.querySelector("form");
 const inputs = document.querySelectorAll(
   'input[type="text"], input[type="password"]'
 );
@@ -70,10 +71,20 @@ const passwordChecker = (value) => {
     progressBar.classList.add("progressGreen");
     password = value;
   }
+
+  if (confirmPass) confirmChecker(confirmPass);
 };
 
 // Verification du CONFIRM PASSWORD.
-const confirmChecker = (value) => {};
+const confirmChecker = (value) => {
+  if (value !== password) {
+    errorDisplay("confirm", "Les mots de passe ne sont pas identiques");
+    confirmPass = false;
+  } else {
+    errorDisplay("confirm", "", true);
+    confirmPass = true;
+  }
+};
 
 inputs.forEach((input) => {
   input.addEventListener("input", (e) => {
@@ -94,4 +105,31 @@ inputs.forEach((input) => {
         null;
     }
   });
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (pseudo && email && password && confirmPass) {
+    const data = {
+      pseudo,
+      email,
+      password,
+    };
+
+    console.log(data);
+
+    // Remise à 0 du formulaire.
+    inputs.forEach((input) => {
+      input.value = "";
+    });
+    progressBar.classList = "";
+    pseudo = null;
+    email = null;
+    password = null;
+    confirmPass = null;
+
+    alert("Inscription validée");
+  } else {
+    alert("Veuillez remplir correctement les champs");
+  }
 });
