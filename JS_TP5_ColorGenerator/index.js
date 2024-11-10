@@ -1,5 +1,5 @@
 const getValue = () => {
-  return Math.floor(Math.random() * 250);
+  return Math.floor(Math.random() * 255);
 };
 
 setInterval(() => {
