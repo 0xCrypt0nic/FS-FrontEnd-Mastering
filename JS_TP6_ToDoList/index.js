@@ -1,13 +1,32 @@
-// Créer un formulaire pour taper les todo
-
-// Ajouter sur le dom ce qui est tapé dans l'input à la validatino du form
-// monInput.value
-
-// Supprimer un todolorsque l'on click dessus (.remove())
-
-// Stocker dans le local storage la liste
-
-// Consulter le local storage au lancement de l'application pour rajouter les todos.
-
 const htmlCheckboxEmpty = "&#9744;";
 const htmlCheckboxChecked = "&#9745;";
+let itemCheck = "";
+let itemText = "";
+let itemInfo = "";
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let item = insertItem(userInput.value, false);
+  list.innerHTML += item;
+  userInput.value = "";
+});
+
+const insertItem = (text, isChecked) => {
+  itemText = text;
+  itemCheck = isChecked ? htmlCheckboxChecked : htmlCheckboxEmpty;
+  itemInfo = isChecked ? "(Cliquez pour supprimer)" : "";
+
+  return `
+            <li>
+                <span class="check-item">${itemCheck}</span>
+                <span class="text-item">${itemText}</span>
+                <span class="info-item">${itemInfo}</span>
+            </li>`;
+};
+
+list.addEventListener("click", (e) => {
+  console.log(e.target);
+  console.log(e.target);
+});
