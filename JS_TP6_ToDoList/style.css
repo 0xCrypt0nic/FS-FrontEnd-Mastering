@@ -5,4 +5,47 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(33, 33, 33);
+}
+
+.global-container {
+  border: 2px solid rgb(164, 164, 164);
+  width: 500px;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 10px 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(164, 164, 164);
+  letter-spacing: 4px;
+}
+
+#userInput {
+  padding: 10px;
+  width: 60%;
+  background: rgb(33, 33, 33);
+  border: 1px solid rgb(164, 164, 164);
+  color: rgb(164, 164, 164);
+  outline: none;
+}
+
+.items-container {
+  padding: 40px 25px 25px;
+  width: 100%;
+  text-align: left;
+  color: rgb(164, 164, 164);
+}
+
+.item-symbol {
+  font-size: 1.5rem;
 }
