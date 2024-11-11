@@ -62,6 +62,26 @@ li {
   cursor: pointer;
 }
 
-li:hover .info-item {
-  visibility: visible;
+li:before {
+  content: "☐";
+  padding: 10px 10px;
+}
+
+li:hover:after {
+  content: "(Cliquez pour cocher)";
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 10px 10px;
+}
+
+li.checked:before {
+  content: "☑";
+  padding: 10px 10px;
+}
+
+li.checked:hover:after {
+  content: "(Supprimer)";
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 10px 10px;
 }

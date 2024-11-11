@@ -1,32 +1,31 @@
-const htmlCheckboxEmpty = "&#9744;";
-const htmlCheckboxChecked = "&#9745;";
-let itemCheck = "";
-let itemText = "";
-let itemInfo = "";
-
 const form = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let item = insertItem(userInput.value, false);
-  list.innerHTML += item;
-  userInput.value = "";
-});
-
-const insertItem = (text, isChecked) => {
-  itemText = text;
-  itemCheck = isChecked ? htmlCheckboxChecked : htmlCheckboxEmpty;
-  itemInfo = isChecked ? "(Cliquez pour supprimer)" : "";
-
-  return `
-            <li>
-                <span class="check-item">${itemCheck}</span>
-                <span class="text-item">${itemText}</span>
-                <span class="info-item">${itemInfo}</span>
-            </li>`;
+// Stockage des data dans le navigateur
+const storeElement = () => {
+  window.localStorage.todoList = list.innerHTML;
 };
 
+const getElement = () => {
+  list.innerHTML = window.localStorage.todoList;
+};
+
+getElement();
+
+// Ajout d'un élément dans la liste.
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  list.innerHTML += `<li text-item>${userInput.value}</li>`;
+  userInput.value = "";
+  storeElement();
+});
+
+// Cochage et Suppression d'un élément.
 list.addEventListener("click", (e) => {
-  console.log(e.target);
-  console.log(e.target);
+  if (e.target.classList.contains("checked")) {
+    e.target.remove();
+  } else {
+    e.target.classList.add("checked");
+  }
+
+  storeElement();
 });
