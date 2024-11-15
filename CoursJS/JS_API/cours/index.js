@@ -26,3 +26,15 @@ fetch("data.txt")
 fetch("data.json")
   .then((res) => res.json())
   .then((data) => console.log(data));
+
+// ========== OPTIONS DE REQUETE ========== //
+
+const myHeaders = new Headers();
+const init = {
+  method: "GET",
+  headers: myHeaders,
+  mode: "cors",
+  cache: "default",
+};
+
+//fetch("data.json", init).then((res) => console.log(res));
