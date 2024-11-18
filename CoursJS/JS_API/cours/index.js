@@ -92,3 +92,26 @@ fetch("data.json")
     // Parse => transforme json en object js
     console.log(JSON.parse(settings));
   });
+
+// ========== LES WEB API ========== //
+
+// -- Client Storage - Local Storage -- //
+localStorage.data = "Je stock la data";
+//document.body.textContent = localStorage.data;
+
+localStorage.removeItem("data");
+
+// On ne peut passer uniquement des chaines de caractères.
+localStorage.user = "Denis";
+
+// Pour passer un objet :
+const obj = {
+  Nom: "Denis",
+  age: 22,
+};
+
+localStorage.user = JSON.stringify(obj);
+console.log(JSON.parse(localStorage.user));
+
+// -- Client Storage - Session Storage -- //
+//sessionStorage.dataSettings = "55px";
