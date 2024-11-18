@@ -79,3 +79,16 @@ setTimeout(() => {
   executeFonction();
 };
  */
+
+// ========== LE JSON ========== //
+
+// Méthode .json() => Méthode qui s'auto-résout en renvoyant le Body de la requête.
+
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // Stringify => convertit en JSON
+    let settings = JSON.stringify(data);
+    // Parse => transforme json en object js
+    console.log(JSON.parse(settings));
+  });
