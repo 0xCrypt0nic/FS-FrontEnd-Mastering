@@ -115,3 +115,9 @@ console.log(JSON.parse(localStorage.user));
 
 // -- Client Storage - Session Storage -- //
 //sessionStorage.dataSettings = "55px";
+
+// ========== LES COOKIES ========== //
+
+document.cookie = "username=0xCryptonic";
+// Bonne pratique
+document.cookie = "pseudo=NG;path=/;max-age=450000; secure; samesite";
