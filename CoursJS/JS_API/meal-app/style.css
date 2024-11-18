@@ -51,7 +51,7 @@ input:focus {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.084);
 }
 h2 {
-  margin: 6px 0;
+  margin: 6px auto;
   color: #16d9e7;
 }
 p {
