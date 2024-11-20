@@ -26,3 +26,49 @@ input[type="range"] {
   font-size: 1.2rem;
   transform: translateY(-3px);
 }
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 40% 20% 20% 20%;
+  justify-content: center;
+
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 5px;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(222, 222, 222);
+  background: rgb(26, 26, 26);
+  border: 1px solid blue;
+}
+
+img {
+  height: 100%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+h2 {
+  height: 100%;
+  border: 1px solid red;
+  margin: 0;
+}
+
+h3 {
+  height: 100%;
+  border: 1px solid red;
+  margin: 0;
+}
+
+p {
+  height: 100%;
+  border: 1px solid red;
+  margin: 0;
+}

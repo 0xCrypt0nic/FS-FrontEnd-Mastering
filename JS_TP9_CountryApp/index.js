@@ -1,18 +1,36 @@
+const countryContainer = document.querySelector(".countries-container");
+
 let listOfCountry = [];
 
-const fetchData = async () => {
+const fetchCountries = async () => {
   await fetch("https://restcountries.com/v3.1/all")
     .then((res) => res.json())
     .then((data) => {
       listOfCountry = data;
     });
 
-  console.log(listOfCountry);
+  console.log(listOfCountry[6]);
 };
 
-fetchData();
+const countriesDisplay = async () => {
+  await fetchCountries();
+  countryContainer.innerHTML = listOfCountry
+    .map((country) => {
+      return `
+        <div class="card">
+            <img src=${country.flags.png} alt="Drapeau de ${
+        country.name.common
+      }">
+            <h2>${country.name.common}</h2>
+            <h3>${country.capital}</h3>
+            <p>Population : ${country.population.toLocaleString()}</p>
+        </div>
+        `;
+    })
+    .join("");
+};
 
-// 3 - Passer les données à une variable
+countriesDisplay();
 
 // 4 - Créer une fonction d'affichage, et paramétrer l'affichage des cartes de chaque pays grace à la méthode MAP
 
