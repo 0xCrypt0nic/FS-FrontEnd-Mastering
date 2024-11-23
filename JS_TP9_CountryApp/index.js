@@ -1,5 +1,4 @@
 const countryContainer = document.querySelector(".countries-container");
-
 let listOfCountry = [];
 
 const fetchCountries = async () => {
@@ -8,13 +7,41 @@ const fetchCountries = async () => {
     .then((data) => {
       listOfCountry = data;
     });
-
-  console.log(listOfCountry[6]);
 };
 
-const countriesDisplay = async () => {
+const countriesDisplay = async (sort) => {
   await fetchCountries();
+
+  // On filtre le tableau
+  if (inputSearch.value) {
+    listOfCountry = listOfCountry.filter((country) => {
+      return country.name.common
+        .toUpperCase()
+        .includes(inputSearch.value.toUpperCase());
+    });
+  }
+
+  // On trie le tableau
+  if (sort) {
+    switch (sort) {
+      case "asc":
+        listOfCountry.sort((a, b) => a.population - b.population);
+        break;
+      case "desc":
+        listOfCountry.sort((a, b) => b.population - a.population);
+        break;
+      case "alpha":
+        listOfCountry.sort((a, b) =>
+          a.name.common.toUpperCase().localeCompare(b.name.common.toUpperCase())
+        );
+        break;
+      default:
+        break;
+    }
+  }
+
   countryContainer.innerHTML = listOfCountry
+    .slice(0, inputRange.value)
     .map((country) => {
       return `
         <div class="card">
@@ -32,11 +59,27 @@ const countriesDisplay = async () => {
 
 countriesDisplay();
 
-// 4 - Créer une fonction d'affichage, et paramétrer l'affichage des cartes de chaque pays grace à la méthode MAP
+// Event on search input => Filtering results.
+inputSearch.addEventListener("input", () => {
+  countriesDisplay();
+});
 
-// 5 - Récupérer ce qui est tapé dans l'input et filtrer (avant le map) les données
-//coutry.name.includes(inputSearch.value);
-
-// 6 - Avec la méthode Slice gérer le nombre de pays affichés (inputRange.value)
+// Event on range => displaying card from 0 to 250.
+inputRange.addEventListener("input", (e) => {
+  rangeValue.textContent = e.target.value;
+  countriesDisplay();
+});
 
 // 7 - Gérer les 3 boutons pour trier (méthode sort()) les pays
+
+minToMax.addEventListener("click", () => {
+  countriesDisplay("asc");
+});
+
+maxToMin.addEventListener("click", () => {
+  countriesDisplay("desc");
+});
+
+alpha.addEventListener("click", () => {
+  countriesDisplay("alpha");
+});
