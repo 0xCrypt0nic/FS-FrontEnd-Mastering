@@ -34,8 +34,9 @@ input[type="range"] {
 
 .card {
   display: grid;
-  grid-template-rows: 40% 20% 20% 20%;
+  grid-template-rows: 50% 18% 18% 14%;
   justify-content: center;
+  text-align: center;
 
   width: 300px;
   height: 250px;
@@ -46,29 +47,17 @@ input[type="range"] {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(222, 222, 222);
   background: rgb(26, 26, 26);
-  border: 1px solid blue;
 }
 
 img {
-  height: 100%;
-  border: 1px solid red;
-  margin: 0 auto;
+  max-height: 80%;
+  width: auto;
+  margin: 15px auto;
 }
 
-h2 {
-  height: 100%;
-  border: 1px solid red;
-  margin: 0;
-}
-
-h3 {
-  height: 100%;
-  border: 1px solid red;
-  margin: 0;
-}
-
+h2,
+h3,
 p {
   height: 100%;
-  border: 1px solid red;
   margin: 0;
 }
