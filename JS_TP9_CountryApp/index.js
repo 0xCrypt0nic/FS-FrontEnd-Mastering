@@ -7,11 +7,10 @@ const fetchCountries = async () => {
     .then((data) => {
       listOfCountry = data;
     });
+  countriesDisplay();
 };
 
 const countriesDisplay = async (sort) => {
-  await fetchCountries();
-
   // On filtre le tableau
   if (inputSearch.value) {
     listOfCountry = listOfCountry.filter((country) => {
@@ -32,7 +31,9 @@ const countriesDisplay = async (sort) => {
         break;
       case "alpha":
         listOfCountry.sort((a, b) =>
-          a.name.common.toUpperCase().localeCompare(b.name.common.toUpperCase())
+          a.translations.fra.common
+            .toUpperCase()
+            .localeCompare(b.translations.fra.common.toUpperCase())
         );
         break;
       default:
@@ -48,7 +49,7 @@ const countriesDisplay = async (sort) => {
             <img src=${country.flags.png} alt="Drapeau de ${
         country.name.common
       }">
-            <h2>${country.name.common}</h2>
+            <h2>${country.translations.fra.common}</h2>
             <h3>${country.capital}</h3>
             <p>Population : ${country.population.toLocaleString()}</p>
         </div>
@@ -56,8 +57,6 @@ const countriesDisplay = async (sort) => {
     })
     .join("");
 };
-
-countriesDisplay();
 
 // Event on search input => Filtering results.
 inputSearch.addEventListener("input", () => {
@@ -83,3 +82,5 @@ maxToMin.addEventListener("click", () => {
 alpha.addEventListener("click", () => {
   countriesDisplay("alpha");
 });
+
+window.addEventListener("load", fetchCountries);
