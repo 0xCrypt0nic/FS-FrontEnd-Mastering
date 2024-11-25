@@ -90,7 +90,26 @@ class Utilisateur {
   constructor(pseudo, ville) {
     (this.pseudo = pseudo), (this.ville = ville);
   }
+
+  sayMyName = () => {
+    console.log(`Bonjour je suis ${this.pseudo}`);
+  };
 }
 
 const user5 = new Utilisateur("Nico", "Orleans");
+
+// Prototypes ne fonctionnent pas avec les fonctions flechées.
+Utilisateur.prototype.sayCity = function () {
+  console.log(`J'habite à ${this.ville}`);
+};
+
+Object.assign(Utilisateur.prototype, {
+  method1() {},
+  method2() {},
+});
+
+// INFORMATION : Les fonctions dans le prototype sont 30% plus rapides que dans le constructeur.
+
 console.log(user5);
+user5.sayMyName();
+user5.sayCity();
