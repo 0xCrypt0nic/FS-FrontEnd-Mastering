@@ -61,3 +61,36 @@ console.log(newObj);
 // ======== CONSTRUIRE DES OBJETS ======== //
 
 // Fonction Constructeur
+function User(pseudo, ville) {
+  this.pseudo = pseudo;
+  this.ville = ville;
+
+  this.getCity = () => {
+    console.log(`${this.pseudo} habite à ${this.ville}`);
+  };
+}
+
+const user1 = new User("From Scratch", "Bordeaux");
+console.log(user1);
+user1.getCity();
+
+// Factory functions
+function User3(pseudo, ville) {
+  return {
+    pseudo,
+    ville,
+  };
+}
+
+const user4 = User3("FS", "nice");
+console.log(user4);
+
+// Class
+class Utilisateur {
+  constructor(pseudo, ville) {
+    (this.pseudo = pseudo), (this.ville = ville);
+  }
+}
+
+const user5 = new Utilisateur("Nico", "Orleans");
+console.log(user5);
