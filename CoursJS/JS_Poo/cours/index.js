@@ -29,3 +29,35 @@ for (const key in obj) {
 }
 
 obj.direBonjour();
+
+// Obtenir les clés
+const keys = Object.keys(obj);
+console.log(keys);
+
+// Obtenir les valeurs
+const values = Object.values(obj);
+console.log(values);
+
+// Obtenir un objet sous forme de tableaux
+const nestedArray = Object.entries(obj);
+console.log(nestedArray);
+
+// Fusionner des objets
+const obj2 = {
+  taille: "1m80",
+  poids: "75kg",
+};
+
+const fusion = Object.assign({}, obj, obj2);
+console.log(fusion);
+
+// Empêcher les modifications
+//const newObj = Object.freeze(obj); // Bloque la modif et l'ajout
+const newObj = Object.seal(obj); // Bloque uniquement l'ajout
+newObj.pseudo = "Test";
+newObj.adresse = "42 avenue du code";
+console.log(newObj);
+
+// ======== CONSTRUIRE DES OBJETS ======== //
+
+// Fonction Constructeur
