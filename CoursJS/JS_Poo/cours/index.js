@@ -113,3 +113,25 @@ Object.assign(Utilisateur.prototype, {
 console.log(user5);
 user5.sayMyName();
 user5.sayCity();
+
+// ======== HERITAGE ======== //
+
+class Animal {
+  constructor(name, age) {
+    (this.name = name), (this.age = age);
+  }
+
+  saySomething = function () {
+    console.log(`${this.name} , âge : ${this.age} ans`);
+  };
+}
+
+class Dog extends Animal {
+  Run = function () {
+    console.log("Cours !");
+  };
+}
+
+const rintintin = new Dog("Rintintin", 9);
+rintintin.saySomething();
+rintintin.Run();
