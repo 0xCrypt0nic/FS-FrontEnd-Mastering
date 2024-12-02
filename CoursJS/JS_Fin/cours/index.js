@@ -70,3 +70,10 @@ try {
 } catch (err) {
   console.log(err);
 }
+
+//------------------------------------------------------------**
+// ========== STRICT MODE ========== //
+//-----------------------------------//
+
+// Il faut déclarer "use strict"; tout en haut du fichier, qui permet
+// de cadrer le js. (Plus d'informations sur le net.
