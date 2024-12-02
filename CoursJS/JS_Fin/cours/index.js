@@ -25,3 +25,48 @@ const draw = () => {
 };
 
 window.addEventListener("load", draw);
+
+//------------------------------------------------------------**
+// ========== TRY / CATCH ========== //
+//-----------------------------------//
+
+try {
+  // Test un block de code
+  maFonction();
+} catch (err) {
+  console.log(err);
+}
+
+function isValidJSON(txt) {
+  try {
+    JSON.parse(txt);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
+// -- Finally
+try {
+  // Test un block de code
+  maFonction();
+} catch (err) {
+  console.log(err);
+} finally {
+  console.log("On est arrivé au bout.");
+}
+
+// Throw
+function isNumber(num) {
+  if (isNaN(num)) {
+    throw "Not a number";
+  } else {
+    console.log("C'est un nombre");
+  }
+}
+
+try {
+  isNumber("jkjk");
+} catch (err) {
+  console.log(err);
+}
