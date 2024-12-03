@@ -77,3 +77,7 @@ try {
 
 // Il faut déclarer "use strict"; tout en haut du fichier, qui permet
 // de cadrer le js. (Plus d'informations sur le net.
+
+//------------------------------------------------------------**
+// ========== MODULES (IMPORT / EXPORT) ========== //
+//-------------------------------------------------//
