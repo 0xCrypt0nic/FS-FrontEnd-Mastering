@@ -12,4 +12,11 @@ console.log(array1);
 var tableau = [];
 tableau.push(false);
 tableau.push(24);
-//tableau.push('string');
+var player1 = {
+    id: 0,
+    name: "Zidane",
+    jersey: 10
+};
+//player1.nickname = "zizou";
+//player1.nickgername = "zizou";
+console.log(player1);

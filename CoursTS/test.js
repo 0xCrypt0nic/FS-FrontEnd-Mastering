@@ -11,3 +11,14 @@ console.log(typeof num);
 let array = ["chient", "chat", "poisson"];
 array[1] = false;
 console.log(array);
+
+// ========== LES OBJETS ========== //
+
+let player = {
+  id: 0,
+  name: "Zidane",
+};
+
+player.nickname = "zizou";
+player.nickgername = "zizou";
+console.log(player);
