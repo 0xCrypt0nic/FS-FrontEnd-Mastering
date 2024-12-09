@@ -23,4 +23,10 @@ player.nickname = "zizou";
 player.nickgername = "zizou";
 console.log(player);
 
-// ========== LES CLASSES ========== //
+// ========== LES FONCTIONS ========== //
+
+/*const sayMyName = (name) => {
+  console.log(`Bonjour ${name}`);
+};
+
+sayMyName();*/

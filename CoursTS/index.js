@@ -31,3 +31,17 @@ var Singer = /** @class */ (function () {
 }());
 var prince = new Singer(0, 'Prince');
 console.log(prince);
+// ========== LES FONCTIONS ========== //
+var sayMyName = function (name) {
+    console.log("Bonjour ".concat(name));
+};
+sayMyName("Nico");
+var ageDuCapitaine = function (age, size) {
+    if (size) {
+        return "La taille du capitaine est de ".concat(size, " et il est \u00E2g\u00E9 de ").concat(age, " ans.");
+    }
+    else {
+        return "Le capitaine est \u00E2g\u00E9 de ".concat(age, " ans.");
+    }
+};
+console.log(ageDuCapitaine(16, 185));

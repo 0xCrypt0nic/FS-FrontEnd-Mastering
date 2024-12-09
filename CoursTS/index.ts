@@ -54,3 +54,21 @@ class Singer{
 
 const prince = new Singer(0, 'Prince');
 console.log(prince);
+
+// ========== LES FONCTIONS ========== //
+
+const sayMyName = (name: string) => {
+    console.log(`Bonjour ${name}`);
+  };
+  
+  sayMyName("Nico");
+
+  const ageDuCapitaine = (age: number | string, size?: number): string => {
+    if(size){
+        return `La taille du capitaine est de ${size} et il est âgé de ${age} ans.`;
+    } else{
+        return `Le capitaine est âgé de ${age} ans.`; 
+    }
+  }
+
+  console.log(ageDuCapitaine(16, 185));
