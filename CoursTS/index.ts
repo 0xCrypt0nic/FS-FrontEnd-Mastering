@@ -72,3 +72,21 @@ const sayMyName = (name: string) => {
   }
 
   console.log(ageDuCapitaine(16, 185));
+
+
+  // ========== LES ENUM & TUPLE ========== //
+
+enum Role{ADMIN, PREMIUM, BASIC};
+
+  interface User{
+    name: string;
+    attributes: [number, string];
+    role: Role.BASIC;
+  }
+
+  const user1:User = {
+    name: "Nico",
+    attributes: [12, "Eleve"],
+    role: Role.BASIC,
+  }
+

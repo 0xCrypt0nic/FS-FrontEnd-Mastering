@@ -45,3 +45,16 @@ var ageDuCapitaine = function (age, size) {
     }
 };
 console.log(ageDuCapitaine(16, 185));
+// ========== LES ENUM & TUPLE ========== //
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["PREMIUM"] = 1] = "PREMIUM";
+    Role[Role["BASIC"] = 2] = "BASIC";
+})(Role || (Role = {}));
+;
+var user1 = {
+    name: "Nico",
+    attributes: [12, "Eleve"],
+    role: Role.BASIC,
+};
