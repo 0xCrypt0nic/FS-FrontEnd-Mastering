@@ -20,6 +20,7 @@ tableau.push(24);
 //tableau.push('string');
 
 // ========== LES OBJETS ========== //
+
 interface Player {
     if: number,
     name: string,
@@ -35,4 +36,21 @@ let player1 = {
   //player1.nickname = "zizou";
   //player1.nickgername = "zizou";
   console.log(player1);
-  
+
+
+// ========== LES CLASSES ========== //
+
+class Singer{
+    id:number;
+    name:string;
+    alive?:boolean;
+
+    constructor(id:number, name:string, alive?:boolean) {
+        this.id = id;
+        this.name = name;
+        this.alive = alive;
+    }
+}
+
+const prince = new Singer(0, 'Prince');
+console.log(prince);

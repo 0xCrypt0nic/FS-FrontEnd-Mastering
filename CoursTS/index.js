@@ -20,3 +20,14 @@ var player1 = {
 //player1.nickname = "zizou";
 //player1.nickgername = "zizou";
 console.log(player1);
+// ========== LES CLASSES ========== //
+var Singer = /** @class */ (function () {
+    function Singer(id, name, alive) {
+        this.id = id;
+        this.name = name;
+        this.alive = alive;
+    }
+    return Singer;
+}());
+var prince = new Singer(0, 'Prince');
+console.log(prince);

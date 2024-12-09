@@ -22,3 +22,5 @@ let player = {
 player.nickname = "zizou";
 player.nickgername = "zizou";
 console.log(player);
+
+// ========== LES CLASSES ========== //
