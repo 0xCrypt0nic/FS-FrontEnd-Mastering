@@ -18,13 +18,13 @@ const Blog = () => {
 
   useEffect(() => getData(), []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (content.length < 140) {
       setError(true);
     } else {
-      axios.post("http://localhost:3004/articles", {
+      await axios.post("http://localhost:3004/articles", {
         author,
         content,
         date: Date.now(),
