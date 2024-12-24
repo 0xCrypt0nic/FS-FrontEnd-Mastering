@@ -1,5 +1,13 @@
+import Header from "./components/Header";
+import Meals from "./components/Meals";
+
 function App() {
-  return <h3>coucou</h3>;
+  return (
+    <div>
+      <Header />
+      <Meals />
+    </div>
+  );
 }
 
 export default App;
