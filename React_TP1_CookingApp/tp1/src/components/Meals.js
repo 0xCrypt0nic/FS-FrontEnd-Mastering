@@ -13,9 +13,11 @@ const Meals = () => {
 
   return (
     <div>
-      {data.map((meal, index) => (
-        <Card Key={index} Meal={meal} />
-      ))}
+      <ul>
+        {data.map((meal, index) => (
+          <Card key={index} Meal={meal} />
+        ))}
+      </ul>
     </div>
   );
 };
