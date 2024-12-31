@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Card from "./Card";
 
 const Meals = () => {
   const [data, setData] = useState([]);
@@ -13,7 +14,7 @@ const Meals = () => {
   return (
     <div>
       {data.map((meal, index) => (
-        <p key={index}>{meal.strMeal}</p>
+        <Card Key={index} Meal={meal} />
       ))}
     </div>
   );
