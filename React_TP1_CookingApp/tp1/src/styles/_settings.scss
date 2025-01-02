@@ -1,7 +1,26 @@
+@font-face{
+    font-family: "fontTitle";
+    src: url("../assets/fonts/DancingScript-VariableFont_wght.ttf")
+}
+
+@font-face{
+    font-family: "fontText";
+    src: url("../assets/fonts/Poppins-Medium.ttf")
+}
+
+$fontTitle: "fontTitle", sans-serif;
+$fontText: "fontText", sans-serif;
+
+$colorTitle : rgb(155, 179, 131);
+$colorText : rgb(96, 96, 96);
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    color: $colorText;
 }
 
 li{
