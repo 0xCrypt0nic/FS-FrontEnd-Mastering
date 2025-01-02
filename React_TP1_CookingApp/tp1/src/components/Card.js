@@ -7,6 +7,7 @@ const Card = ({ Meal }) => {
         <h2>{Meal.strMeal}</h2>
         <p>{Meal.strArea}</p>
         <img src={Meal.strMealThumb} alt={Meal.strMeal} height="100px" />
+        <p>{Meal.strInstructions}</p>
       </li>
     </div>
   );
