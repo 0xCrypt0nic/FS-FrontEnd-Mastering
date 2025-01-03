@@ -12,13 +12,11 @@ const Meals = () => {
   }, []);
 
   return (
-    <div>
-      <ul>
-        {data.map((meal, index) => (
-          <Card key={index} Meal={meal} />
-        ))}
-      </ul>
-    </div>
+    <ul className="meals">
+      {data.map((meal, index) => (
+        <Card key={index} Meal={meal} />
+      ))}
+    </ul>
   );
 };
 

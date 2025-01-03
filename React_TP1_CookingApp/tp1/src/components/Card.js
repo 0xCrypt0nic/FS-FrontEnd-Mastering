@@ -2,14 +2,12 @@ import React from "react";
 
 const Card = ({ Meal }) => {
   return (
-    <div>
-      <li>
-        <h2>{Meal.strMeal}</h2>
-        <p>{Meal.strArea}</p>
-        <img src={Meal.strMealThumb} alt={Meal.strMeal} height="100px" />
-        <p>{Meal.strInstructions}</p>
-      </li>
-    </div>
+    <li className="card">
+      <h2>{Meal.strMeal}</h2>
+      <p>Origin : {Meal.strArea}</p>
+      <img src={Meal.strMealThumb} alt={Meal.strMeal} />
+      <p id="detail">{Meal.strInstructions}</p>
+    </li>
   );
 };
 

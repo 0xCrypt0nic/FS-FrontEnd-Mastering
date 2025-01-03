@@ -1,0 +1,39 @@
+.card{
+    border: 1px solid $colorTitle;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+    height: 650px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 8% 5% 50% 37%;
+
+    text-align: center;
+    
+    h2{
+        font-family: $fontTitle;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p{
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+
+    img{
+        width: 80%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    #detail{
+        overflow: hidden;
+    }
+    
+}
