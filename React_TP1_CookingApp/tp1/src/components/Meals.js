@@ -7,7 +7,7 @@ const Meals = () => {
 
   useEffect(() => {
     axios
-      .get("https://www.themealdb.com/api/json/v1/1/search.php?s=tomato")
+      .get("https://www.themealdb.com/api/json/v1/1/search.php?s=")
       .then((res) => setData(res.data.meals));
   }, []);
 

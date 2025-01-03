@@ -1,7 +1,8 @@
 .meals{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     background-color: rgb(217, 217, 217);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
 }
